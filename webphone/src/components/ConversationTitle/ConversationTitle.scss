@@ -1,0 +1,36 @@
+.online {
+  color: #1100ff;
+  font-size: 16px;
+  margin-bottom: 0;
+}
+
+.offline {
+  color: grey;
+  font-size: 16px;
+  margin-bottom: 0;
+}
+
+.onChatRoom {
+  font-size: 16px;
+  color: #666666;
+  margin-bottom: 0;
+}
+
+.offChatRoom {
+  font-size: 16px;
+  color: #d9d9d9;
+  margin-bottom: 0;
+}
+
+.wrapper {
+  width: 200px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.inChatRoom {
+  margin-left: 3px;
+  margin-bottom: 0;
+  font-weight: bold;
+}

@@ -1,0 +1,99 @@
+.memberItemContainer {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    color: #a8a8a8;
+    font-size: 15.5px;
+    padding: 2px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  
+    .memberItemName {
+      font-size: 15.5px;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden;
+      height: 1.3em;
+      margin-bottom: 0;
+      color: #a8a8a8;
+    }
+  
+    .memberLangCodeContainer {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-top: 2px;
+    }
+  
+    .memberLangCode {
+      font-size: 15.5px;
+      color: #a8a8a8;
+      text-transform: uppercase;
+    }
+  
+    .memberTimeTxt {
+      font-size: 12px;
+      width: 25px;
+      color: #a8a8a8;
+      margin-right: 10px;
+    }
+  
+    * {
+      display: inline-block;
+  
+      &:not(:first-child) {
+        margin-left: 15px;
+      }
+    }
+  }
+  
+  .tooltip {
+    position: relative;
+  }
+  
+  /* Tooltip text */
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: #1100ff;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+  
+    /* Position the tooltip text - see examples below! */
+    position: absolute;
+    z-index: 1;
+  }
+  
+  /* Show the tooltip text when you mouse over the tooltip container */
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+  }
+  
+  .tooltipBottom {
+    top: 135%;
+    left: 50%;
+    margin-left: -60px;
+  }
+  
+  .microIcon {
+    padding: 2px;
+  }
+  
+  .invisible {
+    color: transparent !important;
+    background-color: transparent !important;
+    fill: transparent !important;
+  }
+  
+  @media screen and (max-width: 800px) {
+    .memberItemContainer {
+      width: 100%;
+    }
+  }
+  
+  .successColor {
+    color: 'green'
+  }

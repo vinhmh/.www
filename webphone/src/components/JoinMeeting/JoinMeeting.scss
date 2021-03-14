@@ -1,0 +1,68 @@
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: #00000033;
+  display: flex;
+  justify-content: center;
+  z-index: 9999;
+}
+
+.modal {
+  background: #fff;
+  border-radius: 15px;
+  width: 90%;
+  margin-top: 100px;
+  height: 300px;
+  transition: 0.4s;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  opacity: 1;
+  .body {
+    padding: 15px;
+    flex: 1;
+
+    .logo {
+      display: flex;
+      justify-content: center;
+      opacity: 0.3;
+      img {
+        width: 50px;
+        height: 50px;
+      }
+    }
+
+    .title {
+      text-align: center;
+      margin-top: 10px;
+      color: #1100FF;
+      font-weight: bold;
+      font-size: 14px;
+    }
+  }
+
+  .footer {
+    padding: 15px;
+    flex: 0;
+  }
+
+}
+
+.btn {
+  cursor: pointer;
+  background: #FF1B56;
+  width: 100%;
+  height: 34px;
+  border-radius: 17px;
+  color: #fff;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &:hover {
+    background: #fd3f72;
+  }
+}

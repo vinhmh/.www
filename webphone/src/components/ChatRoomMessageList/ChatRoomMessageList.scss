@@ -1,0 +1,118 @@
+.chatRoomMessageListContainer {
+    height: 80vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+    position: relative;
+}
+
+.messageWrapper {
+  padding: 10px;
+  background: #f5f5f5;
+  width: 90%;
+  border-radius: 20px;
+  text-align: left;
+  margin-bottom: 30px;
+  max-width: 250px;
+  position: relative;
+}
+
+.username {
+  color: #8d8d8d;
+  font-weight: bold;
+}
+.message {
+  color: #8d8d8d;
+  width: 80%;
+  word-wrap: break-word;
+}
+.messageLine {
+  margin-bottom: 0px;
+}
+
+.currentUser {
+  margin-right: 5px;
+  align-self: flex-end;
+  background-color: #2499ff;
+  div, a {
+    color: white;
+  };
+  i {
+  color: #2499ff;
+  }
+}
+
+.receivedAt {
+  position: absolute;
+  color: #8d8d8d;
+  text-align: right;
+  font-size: 12px;
+  color: gray !important;
+  bottom: -20px;
+  right: 0;
+}
+
+
+
+.badgeButtonContainer {
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  background-color: #f4f4f2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.badgeCounter {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+  font-size: 10px;
+  background-color: #7e7474;
+  top: -10%;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.urlFile {
+  // color: white;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+urlFile:hover {
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+.downloadIconWrapper {
+  width: 30px;
+  height: 30px;
+  border-radius: 15px;
+  background-color: white;
+  margin-right: 10px;  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.downloadBtnWrapper {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.originalName {
+  width: 80%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis
+}

@@ -1,0 +1,67 @@
+@import "../../../../../stylesheets/common";
+
+.tableHolder :global(.ui.table) { font-size: 15px; }
+.tableHolder { margin: 0;}
+.tableHolder { height: 100%;}
+
+.meetingBar { display: flex; align-items: center; height: 50px; background: $little_grey; border-top-left-radius: 8px; border-top-right-radius: 8px; padding: 0 12px; border-bottom: 1px solid $little_grey; margin: 0 4px 0 -4px}
+.meetingBar h1 { display: inline-block; margin: 0 12px 0 0; width: 300px; border-right: 3px solid $little_grey; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;}
+.meetingBar h1 i { font-size: 20px; margin: 0 0 0 6px; cursor: pointer; color: $active; }
+.meetingBar h1 i:hover { color: $active; }
+
+.separator {margin: 0; width: 16px; height: 36px; font-weight: 500; border-right: 3px solid $little_grey}
+.info_separator {color: $little_grey}
+
+.featureOn { background: $active; padding: 3px 10px; border-radius: 12px; color: $white; font-size: 14px; font-weight: 300; margin-left: 12px;  }
+.featureDisabled { background: $warning; padding: 3px 10px; border-radius: 12px; color: $white; font-size: 14px; font-weight: 300; margin-left: 12px;  }
+.featureOff { background: $grey; padding: 3px 10px; border-radius: 12px; color: $white; font-size: 14px; font-weight: 300; margin-left: 12px; }
+
+.alignRight { text-align: right !important;}
+.boothBackgroundRow {background-color: $booth_light; color: $white; height: 48px;} 
+.boothTitle { padding: 6px 12px; background-color: $booth; border-radius: 12px; font-size: 12px; letter-spacing: 1px; text-transform: uppercase;}
+.bootUserNumber { background-color: $booth_dark; color: $white; padding: 3px 8px; border-radius: 12px; }
+.regularBackgroundRow { background-color: $regular_light; color: $white; height: 48px }
+.regularTitle { padding: 6px 12px; background-color: $regular; border-radius: 12px; font-size: 12px; letter-spacing: 1px; text-transform: uppercase;}
+.regularUserNumber { background-color: $regular_dark; color: $white; padding: 3px 8px; border-radius: 12px }
+
+.externalUrl {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  padding-left: 10px;
+}
+
+.table {margin: 0 !important; border: 0 !important;}
+
+.grid {
+   height: 100%;
+   position: absolute;
+}
+
+.gridParticipants {
+  height: calc(100% - 48px);
+  overflow-y: auto;
+  padding-right: 0px !important;
+  margin-right: 4px;
+  margin-left: -4px;
+  background: $white;
+  border-bottom: 1px solid $natural_grey;
+  border-bottom-left-radius: 4px;
+  border-left: 5px solid $natural_grey;
+}
+
+.gridDetails {
+  height: calc(100% - 48px);
+  padding-right: 0px !important;
+  padding-left: 0px !important;
+  background: $white;
+  border-bottom: 1px solid $natural_grey;
+  border-bottom-right-radius: 4px;
+  margin: 0 4px 0 -4px !important;
+  border-right: 1px solid $natural_grey;
+}
+
+.gridTitle {
+  height: 76px;
+}
+

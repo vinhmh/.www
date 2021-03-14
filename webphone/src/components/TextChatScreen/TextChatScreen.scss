@@ -1,0 +1,8 @@
+.textchatScreen { z-index: -10; position: fixed;  background: #fff; left: 0; right: 0; bottom: 0; top: 0; display: flex; flex-direction: column; max-width: 420px; margin: 0 auto; }
+.textchatScreen::before { background: #fff; position: absolute; left: 0; right: 0; top: 0; bottom: 0; z-index: 10; content: ''; display: block; }
+.textchatScreen iframe { flex: 2; border: none; width: 100%; }
+.bar { display: flex; width: 100%; box-sizing: border-box; padding: 9px 6px; justify-content: space-between; }
+.closeBtn { margin: 0 0 0 auto; cursor: pointer; }
+.closeBtn i {font-size: 18px; }
+.visible { z-index: 1000; }
+.visible::before { display: none; }

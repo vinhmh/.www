@@ -1,0 +1,62 @@
+.controlsHolder { text-align: center; padding: 10px 0; }
+.moderatorRoomControl { }
+.moderatorRoomControl .slider { -webkit-transform: rotate(-90deg); -ms-transform: rotate(-90deg); transform: rotate(-90deg); position: absolute; width: 60px; }
+.controlRow { margin: 5px auto 0; text-align: center }
+.relayRow { border-top: 1px solid #cfcfcf; margin: 10px 0 0 0; padding: 10px 0 0 0; }
+/**/
+.defaultColor { background: #bfbfbf; border-color: #808080; color: #fff; }
+.controlsHolder .inactive,
+.controlsHolder .inactive:active { @extend .defaultColor; }
+/**/
+.btn { @extend .defaultColor; width: 46px; padding: 0; height: 46px; margin: 0 3px; font-size: 21px; box-sizing: border-box; border-radius: 50px; border-width: 2px; border-style: solid; vertical-align: middle; cursor: pointer; position: relative; display: inline-block; }
+.btn:focus { outline: none; }
+.btn::-moz-focus-inner { border: 0;}
+.btn:not(:active) { transition: all 50ms ease-in; }
+.btn:active { background: #70a3e0; border-color: #4775ac;}
+.btn[disabled] { cursor: not-allowed; }
+.btnPassive,
+.btnPassive[disabled] {opacity: 0.5; cursor: default; }
+.controlBtn { @extend .btn; }
+// .controlBtn:active { background: #4f81bd; border-color: #3a5f8b; }
+.controlBtn[disabled]:active,
+.controlBtn.btnPassive:active { background: #bfbfbf; border-color: #808080; }
+.modBtn,
+.controlBtn.modBtn:active { background: #4f81bd; border-color: #3a5f8b; }
+//
+.hearControls { margin: 0 0 15px; }
+.hearControls .controlBtn:active,
+.hearControls .modBtn { background: #92d050; border-color: #5f9127; color: #000;  }
+.moderatorControls .controlBtn { width: 66px; height: 66px; font-size: 15px; }
+.moderatorControls .controlBtn i {  font-size: 20px; margin: 0 10px 2px; }
+.moderatorControls .controlBtn span {  margin: 0 8px 5px; }
+
+.switchBtn[disabled] { color: #ccc; }
+.textBtn { @extend .btn; font-size: 10px; font-weight: bold; color: #000; text-align: center; line-height: 44px; }
+.peekBtn { font-size: 15px; }
+.peekBtn i { display: inline-block; margin: 0 9px; }
+.floorBtn {font-size: 12px; }
+.floorBtn i { font-size: 15px; display: inline-block; margin: 0 9px 2px; }
+.floorBtn span { display: inline-block; margin: 0 4px 5px; font-weight: bold;}
+//conf btn
+.confBtn { @extend .btn; background: #e46c0a; border-color: #984807; color: #000; }
+.confBtn select { position: absolute; left: 0; top: 0; bottom: 0; right: 0; z-index: 10; cursor: pointer; opacity: 0; color: #000; font-size: 14px; width: 100%; }
+.confBtn select[disabled] { cursor: not-allowed; }
+.confBtn span { font-weight: bold; position: absolute; left: 0; top: 0; bottom: 0; right: 0; line-height: 44px; text-align: center; z-index: 1; font-size: 10px; }
+// relayBtn
+.relayBtn { margin: 0 3px; display: inline-block; position: relative; }
+.relayBtn button { margin: 0; }
+.relayRow img { position: absolute; width: 50px; height: 50px; left: 50%; top: 50%; margin: -25px 0 0 -25px;}
+//labels
+.label { display: inline-block; vertical-align: middle; padding: 5px 6px; margin: 0 4px; border-radius: 4px; font-weight: bold; font-size: 12px; cursor: default; }
+.labelBox { width: 30%; display: inline-block; }
+.labelBoxLeft { @extend .labelBox; text-align: right;}
+.labelBoxLeft .slider { left: -14px; }
+.labelBoxRight { @extend .labelBox; text-align: left;}
+.labelBoxRight .slider { right: -14px; }
+.hearLabel { background: #92d050; border-color: #5f9127; }
+.speakLabel { background: #ff0000; border-color: #c00000; }
+/**/
+.disconnected .btn { opacity: 0.5; }
+.extraRooms {margin: 10px 0 0 0;}
+.extraRoom {display: inline-block; background: #bfbfbf; padding: 2px 5px; margin: 2px 3px; border-radius: 2px; cursor: pointer;}
+.extraRoomHear {background: #92d050;}

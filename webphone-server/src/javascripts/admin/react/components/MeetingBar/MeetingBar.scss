@@ -1,0 +1,14 @@
+@import "../../../../../stylesheets/common";
+
+.optionsBar { display: flex; align-items: center; height: 28px; justify-content: center;}
+.meetingBar { text-align: center; color: #343536; max-width: 600px; margin: 24px auto; }
+.meetingFullBar { text-align: center; color: #343536; max-width: 600px; margin: 24px auto; }
+.icon { display: inline-block !important; }
+.title { display: inline !important; padding-left: 0 !important;}
+.divider { font-size: 11px !important; color: #D4D5D6 !important; }
+.picker { display: inline-block !important; font-size: 18px !important;}
+.picker:hover {cursor: pointer;}
+.extra { font-size: 12px;  vertical-align: super;}
+.see {display: inline-block !important; font-size: 12px !important; color:$active;}
+.secondSee {display: inline-block !important; font-size: 12px !important; color:$active;}
+.see:hover, .secondSee:hover { cursor: pointer;}

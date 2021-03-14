@@ -1,0 +1,23 @@
+.tableHolder :global(.ui.table) { font-size: 15px; }
+.tableHolder { margin: 0 0 15px; }
+.actionsCell {
+  width: 1%;
+  white-space: nowrap;
+  text-align: right !important;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.actionsCell :global(i) { font-size: 18px; cursor: pointer; padding: 3px 0; margin: 0 4px; width: 22px; height: auto; display: inline-block; }
+.conferencesList {}
+.conferencesList .item { display: inline-block; margin: 0 12px 0 0; vertical-align: middle; }
+.conferencesList .item i { margin: 0; font-size: 15px; }
+.conferencesList .item span { display: inline-block; position: relative; padding: 0 2px;  }
+.conferencesList .item span::before { content: ''; display: inline-block; margin: 0 2px 0 0; width: 12px; height: 12px; background:rgba(140, 141, 140, 0.79); border-radius: 50px; }
+.conferencesList .item.talking span::before { background: red; }
+.conferencesList .item.talking span { color: red; }
+.conferencesList .item.speakRoom span { background: #ff0000; color: #000; border-radius: 4px; margin-left: 14px; }
+.conferencesList .item.speakRoom span::before { position: absolute; left: -14px; top: 5px; }
+
+.actionsCell .passive { color: #767676; cursor: default !important; }
+

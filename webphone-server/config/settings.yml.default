@@ -1,0 +1,78 @@
+default: &default
+  appUrl:
+  webphoneUrl:
+  wsUrl:
+  host:
+  bbb_secret:
+  voipHost:
+  outputPath:
+  compilerHashType:
+  compilerDevtool:
+  webpackMode:
+  minimizeAssets:
+  publicPath:
+  manifestFilename:
+  secretToken:
+  webphoneCheckUrl:
+  browserMinimalVersion: ##--- 
+    Chrome: 80
+    Safari: 13
+    Firefox: 78
+    Edge: 80
+  systemMinimalVersion: ##---  
+    MacOS: 10.13
+    iOS: 13.0
+    Android: 9
+    Windows: 7
+  terms: ##---
+    regularTerms: 
+    interpreterTerms: 
+    moderatorTerms: 
+
+development: ##---
+  <<: *default
+
+remote: &remote
+  <<: *default
+  compilerHashType:
+  compilerDevtool:
+  webpackMode:
+  minimizeAssets:
+
+docker:
+  <<: *default
+  appUrl:
+  webphoneUrl:
+  wsUrl:
+
+old_production: ##---
+  <<: *remote
+  appUrl:
+  webphoneUrl:
+  wsUrl:
+  voipHost:
+  webphoneCheckUrl:
+
+staging: ##---
+  <<: *remote
+  appUrl:
+  webphoneUrl:
+  wsUrl:
+  voipHost:
+  webphoneCheckUrl:
+
+bench: ##---
+  <<: *remote
+  appUrl:
+  webphoneUrl:
+  wsUrl:
+  voipHost:
+  webphoneCheckUrl:
+
+production: ##---
+  <<: *remote
+  appUrl:
+  webphoneUrl:
+  wsUrl:
+  voipHost:
+  webphoneCheckUrl:

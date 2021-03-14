@@ -1,0 +1,8 @@
+@import "../../../../../stylesheets/common";
+
+.participantsCount { display: inline-block; padding: 5px 10px; border-radius: 12px; background-color: $white; color: $gold_grey; font-size: 14px; font-weight: 500; margin-left: 6px; margin-right: 6px;}
+.participantsCount span { display: inline-block; text-align: center; }
+.participantCountHighlight {min-width: 36px; font-size: 14px; font-weight: 500; margin-right: 4px; color:$white; background-color: $success; border-radius: 12px;}
+.participantCountWarning {min-width: 36px; font-size: 14px; font-weight: 500; margin-right: 4px; color: $white; background-color: $warning; border-radius: 12px;}
+.noparticipant {min-width: 36px; font-weight: 500; margin-right: 4px; color: $white; background-color:$grey; border-radius: 12px; }
+.participantError {font-size: 14px; font-weight: 400; margin-right: 4px; color:$warning;}

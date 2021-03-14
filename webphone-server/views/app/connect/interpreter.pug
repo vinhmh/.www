@@ -1,0 +1,59 @@
+extends ../../layout/app
+
+block content
+  .page-content
+    .webphone-holder
+      form.webphone-form.large-form#interpreter-user-form(autocomplete="off")
+        h1 Welcome
+        input(type="hidden" name="role" value="interpreter")
+        .cols
+          .col
+            if name
+              .field-group.text-input
+                input(type="hidden" name="username" value=name)
+            else
+              .field-group.text-input
+                input(type="text" name="username" placeholder="Username" tabindex="1")
+            if meetingID
+              .field-group.text-input
+                input#meetingID(type='hidden' name='meetingID' value=meetingID)
+            else
+              .field-group.text-input
+                input#meetingID(type='text' name='meetingID' placeholder='ID Meeting' tabindex="3")
+                //select#meetingID(name="meetingID")
+                  each meeting in meetings
+                    option(data-modPw=meeting.moderatorPW)= meeting.meetingID
+          if password
+            .col
+              .field-group.text-input.password
+                input.password-field(type="hidden" name="password" value=password)
+          else
+            .col
+              .field-group.text-input.password
+                input.password-field(type="password" name="password" placeholder="Password" tabindex="2")
+                i.far.fa-eye-slash.show-password
+        .cols
+          if language1
+            input#cf1(type="hidden" name="cf1" value=language1)
+          else
+            .col
+              .field-group
+                .select-box
+                  span
+                  select(name='cf1' data-default='Booth - 1st Language')#cf1
+                    option(value="") Booth - 1st Language
+          if language2
+            input#cf1(type="hidden" name="cf2" value=language2)
+          else
+            .col
+              .field-group
+                .select-box
+                  span
+                  select(name='cf2' data-default='Booth - 2nd Language')#cf2
+                    option(value="") Booth - 2nd Language
+        div.label-centered Need to check your compatibility ?
+        button.check-btn(type=button) TEST YOUR BROWSER
+        br
+        div.label-centered By clicking CONNECT, you agree to our 
+          a(href="#" target="_blank")#linkInterpreter Terms and conditions 
+        button.submit-btn(type='submit' disabled) CONNECT

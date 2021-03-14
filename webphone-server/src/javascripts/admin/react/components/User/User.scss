@@ -1,0 +1,40 @@
+@import "../../../../../stylesheets/common";
+
+.conferencesList .item { display: inline-block; margin: 0 12px 0 0; vertical-align: middle; }
+.conferencesList .item i { margin: 0; font-size: 15px; }
+.conferencesList .item span { display: inline-block; position: relative; padding: 0 2px; font-size: 14px; }
+.conferencesList .item span::before { content: ''; display: inline-block; margin: 0 2px 0 0; width: 12px; height: 12px; background:$grey; border-radius: 50px; }
+.conferencesList .item.switcher {
+  i {
+    color: $speaking;
+    &:global(.slash) {
+      color: inherit;
+    }
+  }
+}
+.conferencesList .item.talking span::before { background: $speaking }
+.conferencesList .item.talking span { color: $speaking}
+.conferencesList .item.speakRoom span { background: $speaking; color: $white; border-radius: 4px; margin-left: 14px; }
+.conferencesList .item.speakRoom span::before {  position: absolute; left: -14px; top: 5px; }
+.conferencesList .item.hearRoom span { background: $success; border-radius: 4px; color: $white; margin-left: 14px; }
+.conferencesList .item.hearRoom span::before { display: none; }
+
+.participantError {font-size: 14px; font-weight: 400; margin-right: 4px; color:$warning;}
+
+.speaking .username { font-weight: bold; }
+.username {font-size: 14px}
+
+.info_separator {color: $little_grey}
+
+
+.redRow { background: $speaking;}
+
+.actionsCell .passive { color: $grey; cursor: default !important;}
+
+.regularUserColor { color: $regular }
+.staffUserColor {color: $success}
+.boothUserColor {color: $booth }
+.errorUser { margin-right: 6px !important; }
+
+.collaborationEnabled {color: $active !important; font-size: 95% !important; }
+.collaborationDisabled { color: $little_grey !important; font-size: 95% !important; }

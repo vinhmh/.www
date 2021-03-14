@@ -1,0 +1,75 @@
+.userContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  position: relative;
+  height: 6vh;
+  .userName {
+    font-size: 20px;
+    color: #1100ff;
+    text-align: center;
+    text-overflow: ellipsis;
+    white-space: pre-line;
+    flex: 1;
+    overflow: hidden;
+    align-self:center;
+    margin: 0;
+    padding-top: 5px;
+    max-width: 300px;
+    word-wrap: break-word;
+  }
+
+  .userLanguage {
+    font-size: 15px;
+    color: #a8a8a8;
+  }
+}
+
+.transparentNoOrator {
+  font-size: 15px;
+  color: transparent;
+}
+.menuBtn {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  flex-direction: column;
+  .btn {
+    margin-top: 10px;
+    align-self: flex-end;
+
+  }
+}
+.noOutline {
+  outline: none !important;
+}
+
+.noOutline:focus {
+  outline: none !important;
+  box-shadow: none;
+}
+.titleHeaderBtn{
+  display: flex;
+  width: 100%;
+  position: absolute;
+}
+.btnMessage{
+  display: none;
+}
+@media screen and (max-width:812px){
+    .btnMessage{
+      display: block;
+    }
+    .chatContainer {
+      width: 100%;
+      height: 100vh;
+    }
+    .ibpContainer {
+      display: flex;
+      flex-direction: column;
+    }
+    .swipeDisplayNone {
+      display: block !important;
+    }
+}

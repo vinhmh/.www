@@ -1,0 +1,18 @@
+@import "../../../../../stylesheets/common";
+
+.closeButton {
+  position: absolute;
+  right: 8px;
+  top: 10px;
+}
+
+.container {
+  padding: 8px;
+  background-color: $light_grey;
+  border-left: 4px solid $little_grey;
+  height: 76px;
+}
+
+.header_button {
+  margin-top: 4px !important;
+}

@@ -1,0 +1,66 @@
+@import "../../../../../stylesheets/common";
+
+.barValue {
+  color: $white;
+  font-size: 17px;
+  font-weight: 500;
+  margin-right: 4px;
+}
+
+.barValueYellow {
+  color: $warning_light;
+  font-size: 17px;
+  font-weight: 500;
+  margin-right: 4px;
+}
+
+.barIcon {
+  color: $grey_dark !important;
+  font-size: 18px !important;
+}
+
+.barItem {
+  padding: 2px 6px;
+  background-color: $grey;
+  border-radius: 4px;
+  margin: 8px 3px;
+  width: 64px;
+  text-align: center;
+}
+
+.barItemWide {
+  padding: 2px 3px;
+  background-color: $grey;
+  border-radius: 4px;
+  margin: 8px 4px;
+  width: 96px;
+  text-align: center;
+}
+
+.barLogo {
+  margin: 6px 0 0 16px;
+}
+
+.barConnection {
+  line-height: 42px;
+  margin-right: 16px;
+  font-size: 20px;
+}
+
+.height {
+  height: 45px;
+}
+
+@media screen and (max-width: 768px) { 
+  .barItem, .barConnection, .barLogo, .barItemWide  {
+    display: none !important;
+  }
+
+  .barLeft, .barRight {
+    display: none;
+  }
+
+  .height {
+    height: auto;
+  }
+}

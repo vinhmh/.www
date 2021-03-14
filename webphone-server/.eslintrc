@@ -1,0 +1,89 @@
+##
+# If you need to add/change/remove rules, bring it up for open discussion before merging
+##
+root: true
+parser: babel-eslint
+extends: airbnb
+
+rules:
+    arrow-parens: 0
+    camelcase: 1
+    func-names: 0
+    max-len: [2, 140, 2, { ignoreUrls: true, ignoreComments: false, ignorePattern: "^(import|\\s+\\w+?: |\\s+\\w+? \\w+? = )" }]
+    no-shadow: 1
+    no-unexpected-multiline: 2
+    semi: [2, never]
+    sort-vars: 1
+    sort-keys: 0
+    no-mixed-operators:
+     - 'warn'
+    no-console: 0
+    no-param-reassign: 0
+    no-return-assign: 0
+    no-unused-expressions:
+      - 2
+      - allowShortCircuit: true
+    no-undef: 0
+    comma-dangle: ["error", "only-multiline"]
+    consistent-return: 0
+
+    import/extensions: 0
+    import/imports-first: 2
+    import/named: 2
+    import/no-commonjs: 2
+    import/no-duplicates: 2
+    import/no-named-as-default: 1
+    import/no-unresolved: 2
+    import/prefer-default-export: 1
+    import/no-extraneous-dependencies:
+      - 'error'
+      - devDependencies: true
+
+    jsx-a11y/alt-text: 1
+    jsx-a11y/img-has-alt: 0
+    jsx-a11y/media-has-caption: 1
+    jsx-a11y/no-autofocus: 0
+    jsx-a11y/no-static-element-interactions: 1
+    jsx-a11y/click-events-have-key-events: 0
+
+    object-curly-newline: 0
+
+    # react/jsx-wrap-multilines: 0 #
+    react/display-name: 1
+    react/forbid-component-props: 1
+    react/forbid-prop-types: 0
+    react/jsx-filename-extension: 0 # https://github.com/airbnb/javascript/blob/master/packages/eslint-config-airbnb/rules/react.js#L226
+    react/jsx-key: 2
+    react/jsx-no-duplicate-props: 2
+    react/jsx-no-undef: [1, { "allowGlobals": true }]
+    react/jsx-one-expression-per-line: 0
+    react/no-did-mount-set-state: 0
+    react/no-string-refs: 2
+    react/no-unescaped-entities: 0 # very unlikely to cause issues, very annoying to have on.
+    react/prop-types: 1
+    react/require-default-props: 1
+    react/sort-comp: 1 # Enforce component methods order (fixable)
+    react/sort-prop-types: 1 # Enforce propTypes declarations alphabetical sorting
+    react/style-prop-object: 1 # Enforce style prop value being an object
+
+env:
+    browser: true
+    jasmine: true
+
+plugins:
+    - import
+
+settings:
+    import/ignore:
+      - node_modules
+      - \.css$
+    import/resolver:
+      node:
+        extensions:
+          - .js
+          - .jsx
+
+globals:
+  window: true
+  jest: true
+  React: true

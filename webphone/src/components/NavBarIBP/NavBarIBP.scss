@@ -1,0 +1,110 @@
+.menuContainer {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(128, 128, 128, 0.473);
+  width: 100%;
+  border-radius: 10px;
+  height: 100%;
+  z-index: 2;
+}
+
+.menuIBP {
+  position: absolute;
+  width: 135px;
+  height: 100vh;
+  border-radius: 10px;
+  background-color: white;
+  top: 0;
+  left: 0;
+  overflow-y: auto;
+  z-index: 2;
+}
+
+.menuIBPContainer {
+  height: 100vh;
+  position: relative;
+}
+
+.menuLogo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+}
+
+.conferenceName {
+    line-height: 1.5;
+}
+
+.availableConferences {
+  text-align: center;
+  font-size: 12px;
+  color: #a8a8a8;
+  font-weight: bold;
+  line-height: 0.8;
+}
+
+.menuBtns {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+
+  .btn {
+    margin-top: 10px;
+  }
+
+  .settingsText {
+    font-size: 16px;
+    color: #a8a8a8;
+  }
+}
+
+.arrowIcon {
+  margin-left: 10px;
+}
+
+.menuBtnsContainer {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  margin-top: 15px;
+}
+
+.logoutBtnContainer {
+  display: block;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.ibpMenuDropdownContent {
+  display: none;
+  position: absolute;
+  background-color: #ffffff;
+  min-width: auto;
+  width: 80%;
+  transform: translate3d(15px, 0px, 0px);
+  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.2);
+  padding: 12px 16px;
+  z-index: 1;
+  border-radius: 5px;
+}
+
+.ibpMenuDropdownBtns {
+    text-align: center;
+}
+
+.ibpMenuBtn {
+    background-color: transparent;
+    border-width: 0;
+    padding: 5px 10px 5px 10px;
+    font-size: 14px;
+    color: #a8a8a8;
+}
+
+.ibpMenuDropdown:hover .ibpMenuDropdownContent {
+  display: block;
+}

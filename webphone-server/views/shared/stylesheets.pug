@@ -1,0 +1,2 @@
+each asset in assets.filter(path => path.endsWith('.css'))
+  link(href=`${config.publicPath}${asset}` rel='stylesheet')

@@ -1,0 +1,12 @@
+.oratorHolder { padding: 0; }
+.orator { color: #000; }
+.desc { height: 46px; font-size: 12px; margin: 0 5px; padding: 2px 0 8px; border-bottom: 1px solid #cfcfcf; display: flex; flex-wrap: nowrap; justify-content: center; align-items: center; align-content: center; }
+.desc p { display: inline-block; vertical-align: top; }
+.desc p:first-child { margin: 0 4px 0 0; }
+.desc .roomName { color: #e46d0c; vertical-align: middle; display: inline-block; margin: 0 0 0 4px; }
+.desc .oratorTitle { line-height: 46px; vertical-align: middle; text-align: left; overflow: hidden;text-overflow: ellipsis; white-space: nowrap; }
+/**/
+.moderator .desc { }
+.moderator .desc .oratorTitle { }
+.oratorBox { position: relative; min-height: 46px;display: flex; flex-direction: column; justify-content: center; }
+.oratorBox .slider {-webkit-transform: rotate(-90deg); -ms-transform: rotate(-90deg); transform: rotate(-90deg); position: absolute; width: 60px; right: -58px; top: 10px; }

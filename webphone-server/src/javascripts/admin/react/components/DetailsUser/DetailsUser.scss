@@ -1,0 +1,76 @@
+@import "../../../../../stylesheets/common";
+
+.row {
+  padding-top: 8px !important;
+  padding-bottom: 0 !important;
+  font-size: 95%;
+}
+
+.label {
+  color: $gold_grey;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.contentValue {
+  width: fit-content;
+  color: $regular_dark;
+}
+
+.contentValueOk {
+  width: fit-content;
+  color: $success;
+}
+
+.contentValueNok {
+  font-size: 13px !important;
+  width: fit-content;
+  color: $gold_grey;
+}
+
+.contentLabel {
+ width: auto;
+}
+
+.contentSubvalue {
+  font-weight: 500;
+  color: $regular_dark;
+}
+
+.contentSubvalueSecondary {
+  font-weight: 500;
+  color: $grey
+}
+
+.category {
+  margin-top: 12px;
+  margin-left: -6px;
+  font-weight: 600;
+}
+
+.contentSubValueWarning {
+  color: $warning;
+  font-weight: 100;
+}
+
+.contentSubValueWarning {
+  color: $warning;
+  font-weight: 100;
+}
+
+.contentSubValueError {
+  color: $speaking;
+  font-weight: 100;
+}
+
+.container {
+  overflow-x: hidden;
+  padding: 0 8px 12px 8px;
+  border-left: 4px solid $little_grey;
+  background: $white;
+  height: calc(100% - 75px);
+}
+
+.button {
+  margin-top: 8px !important;
+}

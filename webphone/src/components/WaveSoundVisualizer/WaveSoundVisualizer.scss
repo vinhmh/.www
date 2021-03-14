@@ -1,0 +1,53 @@
+.wsvContainer {
+  text-align: center;
+  height: 12vh;
+  padding-top: 2vh;
+
+  .txtNotif {
+    font-size: 15px;
+    color: #a8a8a8;
+    overflow-x: hidden;
+    overflow-y: auto;
+    width: 100%;
+    height: 30px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .interpretIcon {
+    margin-top: 30px;
+  }
+
+  .txtInterpret {
+    font-size: 14px;
+    color: #a8a8a8;
+  }
+}
+
+.inputMeter {
+  display: block;
+  width: 80%;
+  margin-top: -50px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.slowSpeak {
+  width: 30%;
+  display: flex;
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.iconSlowSpeak {
+  cursor: pointer;
+  margin-right: 17%;
+}
+.mr2 {
+  margin-right: 20px;
+}
+.text {
+    font-size: 14px;
+    color: #a8a8a8
+}

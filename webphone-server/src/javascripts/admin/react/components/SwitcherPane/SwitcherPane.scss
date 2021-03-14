@@ -1,0 +1,5 @@
+@import "../../../../../stylesheets/common";
+
+.featureOn { background: $active; padding: 3px 10px; border-radius: 12px; color: $white; font-size: 14px; font-weight: 300; margin-left: 6px; margin-right: 6px;  }
+.featureDisabled { background: $warning; padding: 3px 10px; border-radius: 12px; color: $white; font-size: 14px; font-weight: 300; margin-left: 6px; margin-right: 6px;  }
+.featureOff { background: $grey; padding: 3px 10px; border-radius: 12px; color: $white; font-size: 14px; font-weight: 300; margin-left: 6px; margin-right: 6px; }

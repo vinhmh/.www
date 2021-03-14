@@ -1,0 +1,16 @@
+extends ../../layout/app
+
+block content
+  .page-content
+    .webphone-holder
+      form.webphone-form#citeo-user-form(autocomplete="off")
+        h1 Welcome
+        input#username(type="hidden" name="username" placeholder="Username" value="citeo_user")
+        .field-group.text-input
+          input#meetingID(type="hidden" name="meetingID" value="Citeo19062019")
+        .field-group
+          .select-box
+            span
+            select(name='cf1' data-default='Choose your language')#cf1
+              option(value="") Choose your language
+        button.submit-btn(type="submit" disabled) CONNECT

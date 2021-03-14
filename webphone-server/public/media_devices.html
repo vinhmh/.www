@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>media</title>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <style>
+    body {font: 14px/16px Arial, sans-serif;}
+    td {padding: 2px;}
+    th {text-align: left;}
+  </style>
+</head>
+<body>
+  <button id="update">Update</button>
+  <button id="interval">Start</button>
+  <table id="devices">
+    <thead>
+    <tr>
+      <th>deviceId</th>
+      <th>kind</th>
+      <th>label</th>
+      <th>groupId</th>
+    </tr>
+    </thead>
+    <tbody id="deviceList"></tbody>
+  </table>
+  <script>
+    var $deviceList = $('#deviceList')
+    var interval = null
+    var $intervalBtn = $('#interval')
+
+
+    $('#update')
+      .on('click', function () {
+        listDevices()
+      })
+    $intervalBtn.on('click', function () {
+      if (interval) {
+        clearInterval(interval)
+        interval = null
+        $intervalBtn.html('Start')
+      } else {
+        listDevices()
+        interval = setInterval(listDevices, 400)
+        $intervalBtn.html('Stop')
+      }
+    })
+
+    function listDevices() {
+      navigator.mediaDevices.getUserMedia({ audio: true }).then(function (stream) {
+        navigator.mediaDevices.enumerateDevices().then(function (devices) {
+          console.log(devices)
+          $deviceList.html('')
+          $.each(devices, function (i, item) {
+            $('#devices').append('<tr>' +
+              '<td>' + item.deviceId + '</td>' +
+              '<td>' + item.kind + '</td>' +
+              '<td>' + item.label + '</td>' +
+              '<td>' + item.groupId + '</td>' +
+              '</tr>')
+          })
+
+          try {
+            const tracks = stream.getTracks()
+            for (const i in tracks) {
+              const mst = tracks[i]
+              if (mst !== null && mst !== undefined) mst.stop()
+            }
+          } catch (err) {
+            alert("Can't stop tracks in stream")
+            console.log(err)
+          }
+        })
+      }).catch(function (err) {
+        alert(err)
+      });
+    }
+  </script>
+</body>
+</html>

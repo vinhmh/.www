@@ -1,0 +1,4 @@
+.loungeBtn { margin: 0 2px; padding: 0 5px; display: inline-block; font-size: 11px; vertical-align: top; background: #bbb; border: 2px solid #777; border-radius: 4px; outline: none; cursor: pointer; font-weight: bold; height: 22px; }
+.loungeBtnActive { background: rgba(255, 44, 37, 0.76); border-color: #bf1706; }
+.loungeBtn:not(:active) { transition: all 50ms ease-in-out; }
+.loungeBtn:active { background: #70a3e0; border-color: #4775ac;}

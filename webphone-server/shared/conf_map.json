@@ -1,0 +1,302 @@
+{
+  "meetings": {
+    "Demo": {
+      "conferences": [
+        {"number": "70001", "accessible": true, "title": "Arabic", "code": "AR"},
+        {"number": "70002", "accessible": true, "title": "Czech", "code": "CS"},
+        {"number": "70003", "accessible": true, "title": "Dutch", "code": "NL"},
+        {"number": "70004", "accessible": true, "title": "English", "code": "EN"},
+        {"number": "70000", "accessible": true, "title": "French", "code": "FR"},
+        {"number": "70006", "accessible": true, "title": "German", "code": "DE"},
+        {"number": "70007", "accessible": true, "title": "Greek", "code": "EL"},
+        {"number": "70008", "accessible": true, "title": "Hungarian", "code": "HU"},
+        {"number": "70009", "accessible": true, "title": "Italian", "code": "IT"},
+        {"number": "70010", "accessible": true, "title": "Norwegian", "code": "NO"},
+        {"number": "70011", "accessible": true, "title": "Polish", "code": "PL"},
+        {"number": "70012", "accessible": true, "title": "Portuguese", "code": "PT"},
+        {"number": "70013", "accessible": true, "title": "Russian", "code": "RU"},
+        {"number": "70014", "accessible": true, "title": "Spanish", "code": "ES"},
+        {"number": "70015", "accessible": true, "title": "Swedish", "code": "SV"},
+        {"number": "70016", "accessible": true, "title": "Urdu", "code": "UR"},
+        {"number": "70017", "accessible": true, "title": "Turkish", "code": "TR"}
+      ],
+      "lounge": "80000"
+    },
+    "Training1": {
+      "conferences": [
+        {"number": "70020", "accessible": true, "title": "Arabic", "code": "AR"},
+        {"number": "70021", "accessible": true, "title": "Czech", "code": "CS"},
+        {"number": "70022", "accessible": true, "title": "Dutch", "code": "NL"},
+        {"number": "70023", "accessible": true, "title": "English", "code": "EN"},
+        {"number": "70024", "accessible": true, "title": "French", "code": "FR"},
+        {"number": "70025", "accessible": true, "title": "German", "code": "DE"},
+        {"number": "70026", "accessible": true, "title": "Greek", "code": "EL"},
+        {"number": "70027", "accessible": true, "title": "Hungarian", "code": "HU"},
+        {"number": "70028", "accessible": true, "title": "Italian", "code": "IT"},
+        {"number": "70029", "accessible": true, "title": "Norwegian", "code": "NO"},
+        {"number": "70030", "accessible": true, "title": "Polish", "code": "PL"},
+        {"number": "70031", "accessible": true, "title": "Portuguese", "code": "PT"},
+        {"number": "70032", "accessible": true, "title": "Russian", "code": "RU"},
+        {"number": "70033", "accessible": true, "title": "Spanish", "code": "ES"},
+        {"number": "70034", "accessible": true, "title": "Swedish", "code": "SV"},
+        {"number": "70035", "accessible": true, "title": "Urdu", "code": "UR"},
+        {"number": "70036", "accessible": true, "title": "Turkish", "code": "TR"}
+      ],
+      "lounge": "80001"
+    },
+    "Training2": {
+      "conferences": [
+        {"number": "70040", "accessible": true, "title": "Arabic", "code": "AR"},
+        {"number": "70041", "accessible": true, "title": "Czech", "code": "CS"},
+        {"number": "70042", "accessible": true, "title": "Dutch", "code": "NL"},
+        {"number": "70043", "accessible": true, "title": "English", "code": "EN"},
+        {"number": "70044", "accessible": true, "title": "French", "code": "FR"},
+        {"number": "70045", "accessible": true, "title": "German", "code": "DE"},
+        {"number": "70046", "accessible": true, "title": "Greek", "code": "EL"},
+        {"number": "70047", "accessible": true, "title": "Hungarian", "code": "HU"},
+        {"number": "70048", "accessible": true, "title": "Italian", "code": "IT"},
+        {"number": "70049", "accessible": true, "title": "Norwegian", "code": "NO"},
+        {"number": "70050", "accessible": true, "title": "Polish", "code": "PL"},
+        {"number": "70051", "accessible": true, "title": "Portuguese", "code": "PT"},
+        {"number": "70052", "accessible": true, "title": "Russian", "code": "RU"},
+        {"number": "70053", "accessible": true, "title": "Spanish", "code": "ES"},
+        {"number": "70054", "accessible": true, "title": "Swedish", "code": "SV"},
+        {"number": "70055", "accessible": true, "title": "Urdu", "code": "UR"},
+        {"number": "70056", "accessible": true, "title": "Turkish", "code": "TR"}
+      ],
+      "lounge": "80002"
+    },
+    "Interne": {
+      "conferences": [
+        {"number": "70060","accessible": true, "title": "Andromede (en)", "code": "EN"},
+        {"number": "70061","accessible": true, "title": "Jupiter (fr)", "code": "FR"}
+      ],
+      "lounge": "80003"
+    },
+    "Test_switcher": {
+      "conferences": [
+        {"number": "70062","accessible": true, "title": "French", "code": "FR"},
+        {"number": "70063","accessible": true, "title": "English", "code": "EN"},
+        {"number": "70064","accessible": true, "title": "Italian", "code": "IT"},
+        {"number": "70065","accessible": true, "title": "Japanese", "code": "JA"}
+      ],
+      "useSwitcher": true,
+      "floor" : "80004",
+      "lounge": "80005"
+    },
+    "Euresademo": {
+      "conferences": [
+        {"number": "70066", "accessible": true, "title": "English", "code": "EN"},
+        {"number": "70067", "accessible": true, "title": "French", "code": "FR"},
+        {"number": "70068", "accessible": true, "title": "Italian", "code": "IT"}
+      ],
+      "lounge": "80006"
+    },
+    "Pourparlersdemo": {
+      "conferences": [
+        {"number": "70018", "accessible": true, "title": "Czech", "code": "CS"},
+        {"number": "70019", "accessible": true, "title": "Danish", "code": "DA"},
+        {"number": "70069", "accessible": true, "title": "Dutch", "code": "NL"},
+        {"number": "70070", "accessible": true, "title": "English", "code": "EN"},
+        {"number": "70071", "accessible": true, "title": "French", "code": "FR"},
+        {"number": "70037", "accessible": true, "title": "German", "code": "DE"},
+        {"number": "70038", "accessible": true, "title": "Hungarian", "code": "HU"},
+        {"number": "70072", "accessible": true, "title": "Italian", "code": "IT"},
+        {"number": "70039", "accessible": true, "title": "Polish", "code": "PL"},
+        {"number": "70073", "accessible": true, "title": "Portuguese", "code": "PT"},
+        {"number": "70057", "accessible": true, "title": "Romanian", "code": "RO"},
+        {"number": "70074", "accessible": true, "title": "Spanish", "code": "ES"},
+        {"number": "70058", "accessible": true, "title": "Swedish", "code": "SV"}
+      ],
+      "lounge": "80007"
+    },
+    "Bcodemo": {
+      "conferences": [
+        {"number": "70075", "accessible": true, "title": "Czech", "code": "CS"},
+        {"number": "70076", "accessible": true, "title": "Dutch", "code": "NL"},
+        {"number": "70077", "accessible": true, "title": "English", "code": "EN"},
+        {"number": "70078", "accessible": true, "title": "French", "code": "FR"},
+        {"number": "70079", "accessible": true, "title": "German", "code": "DE"},
+        {"number": "70080", "accessible": true, "title": "Greek", "code": "EL"},
+        {"number": "70081", "accessible": true, "title": "Italian", "code": "IT"},
+        {"number": "70082", "accessible": true, "title": "Norwegian", "code": "NO"},
+        {"number": "70083", "accessible": true, "title": "Polish", "code": "PL"},
+        {"number": "70084", "accessible": true, "title": "Portuguese", "code": "PT"},
+        {"number": "70085", "accessible": true, "title": "Spanish", "code": "ES"},
+        {"number": "70086", "accessible": true, "title": "Swedish", "code": "SV"}
+      ],
+      "lounge": "80008"
+    },
+    "Challengedemo": {
+      "conferences": [
+        {"number": "70089", "accessible": true, "title": "Czech", "code": "CS"},
+        {"number": "70090", "accessible": true, "title": "Dutch", "code": "NL"},
+        {"number": "70091", "accessible": true, "title": "English", "code": "EN"},
+        {"number": "70092", "accessible": true, "title": "French", "code": "FR"},
+        {"number": "70093", "accessible": true, "title": "German", "code": "DE"},
+        {"number": "70094", "accessible": true, "title": "Greek", "code": "EL"},
+        {"number": "70095", "accessible": true, "title": "Italian", "code": "IT"},
+        {"number": "70096", "accessible": true, "title": "Norwegian", "code": "NO"},
+        {"number": "70097", "accessible": true, "title": "Polish", "code": "PL"},
+        {"number": "70098", "accessible": true, "title": "Portuguese", "code": "PT"},
+        {"number": "70099", "accessible": true, "title": "Spanish", "code": "ES"},
+        {"number": "70100", "accessible": true, "title": "Swedish", "code": "SV"}
+      ],
+      "lounge": "80009"
+    },
+    "Intonationsdemo": {
+      "conferences": [
+        {"number": "70103", "accessible": true, "title": "Arabic", "code": "AR"},
+        {"number": "70104", "accessible": true, "title": "Czech", "code": "CS"},
+        {"number": "70105", "accessible": true, "title": "Dutch", "code": "NL"},
+        {"number": "70106", "accessible": true, "title": "English", "code": "EN"},
+        {"number": "70107", "accessible": true, "title": "French", "code": "FR"},
+        {"number": "70108", "accessible": true, "title": "German", "code": "DE"},
+        {"number": "70109", "accessible": true, "title": "Greek", "code": "EL"},
+        {"number": "70110", "accessible": true, "title": "Hungarian", "code": "HU"},
+        {"number": "70111", "accessible": true, "title": "Italian", "code": "IT"},
+        {"number": "70112", "accessible": true, "title": "Norwegian", "code": "NO"},
+        {"number": "70113", "accessible": true, "title": "Polish", "code": "PL"},
+        {"number": "70114", "accessible": true, "title": "Portuguese", "code": "PT"},
+        {"number": "70115", "accessible": true, "title": "Russian", "code": "RU"},
+        {"number": "70116", "accessible": true, "title": "Spanish", "code": "ES"},
+        {"number": "70117", "accessible": true, "title": "Swedish", "code": "SV"}
+      ],
+      "lounge": "80010"
+    },
+    "OrangeplazzaDemo": {
+      "conferences": [
+        {"number": "70120", "accessible": true, "title": "English", "code": "EN"},
+        {"number": "70121", "accessible": true, "title": "French", "code": "FR"}
+      ],
+      "lounge": "80011"
+    },
+    "Nge173": {
+      "conferences": [
+        {"number": "70122", "accessible": true, "title": "English", "code": "EN"},
+        {"number": "70123", "accessible": true, "title": "French", "code": "FR"}
+      ],
+      "lounge": "80012"
+    },
+    "Ark456": {
+      "conferences": [
+        {"number": "70124", "accessible": true, "title": "English", "code": "EN"},
+        {"number": "70125", "accessible": true, "title": "French", "code": "FR"},
+        {"number": "70126", "accessible": true, "title": "German", "code": "DE"},
+        {"number": "70127", "accessible": true, "title": "Italian", "code": "IT"},
+        {"number": "70128", "accessible": true, "title": "Spanish", "code": "ES"}
+      ],
+      "lounge": "80013"
+    },
+    "Tom140": {
+      "conferences": [
+        {"number": "70129", "accessible": true, "title": "Czech", "code": "CS"},
+        {"number": "70130", "accessible": true, "title": "Danish", "code": "DA"},
+        {"number": "70191", "accessible": true, "title": "Dutch", "code": "NL"},
+        {"number": "70131", "accessible": true, "title": "English", "code": "EN"},
+        {"number": "70132", "accessible": true, "title": "French", "code": "FR"},
+        {"number": "70133", "accessible": true, "title": "German", "code": "DE"},
+        {"number": "70134", "accessible": true, "title": "Hungarian", "code": "HU"},
+        {"number": "70135", "accessible": true, "title": "Italian", "code": "IT"},
+        {"number": "70136", "accessible": true, "title": "Polish", "code": "PL"},
+        {"number": "70137", "accessible": true, "title": "Romanian", "code": "RO"},
+        {"number": "70138", "accessible": true, "title": "Spanish", "code": "ES"}
+      ],
+      "lounge": "80014"
+    },
+    "Agf615": {
+      "conferences": [
+        {"number": "70139", "accessible": true, "title": "Czech", "code": "CS"},
+        {"number": "70140", "accessible": true, "title": "Dutch", "code": "NL"},
+        {"number": "70141", "accessible": true, "title": "French", "code": "FR"},
+        {"number": "70142", "accessible": true, "title": "German", "code": "DE"},
+        {"number": "70143", "accessible": true, "title": "Hungarian", "code": "HU"},
+        {"number": "70144", "accessible": true, "title": "Italian", "code": "IT"},
+        {"number": "70145", "accessible": true, "title": "Polish", "code": "PL"},
+        {"number": "70146", "accessible": true, "title": "Spanish", "code": "ES"}
+      ],
+      "lounge": "80015"
+    },
+    "Ran154": {
+      "conferences": [
+        {"number": "70147", "accessible": true, "title": "Plenary/Workshop EN", "code": "EN"},
+        {"number": "70148", "accessible": true, "title": "Plénière/Atelier FR", "code": "FR"},
+        {"number": "70149", "accessible": true, "title": "Workshop 2 EN", "code": "EN"},
+        {"number": "70150", "accessible": true, "title": "Atelier 2 FR", "code": "FR"},
+        {"number": "70151", "accessible": true, "title": "Workshop 3 EN", "code": "EN"},
+        {"number": "70152", "accessible": true, "title": "Atelier 3 FR", "code": "FR"}
+      ],
+      "lounge": "80016"
+    },
+    "Agf312": {
+      "conferences": [
+        {"number": "70157", "accessible": true, "title": "Czech", "code": "CS"},
+        {"number": "70158", "accessible": true, "title": "Dutch", "code": "NL"},
+        {"number": "70160", "accessible": true, "title": "French", "code": "FR"},
+        {"number": "70161", "accessible": true, "title": "Hungarian", "code": "HU"},
+        {"number": "70162", "accessible": true, "title": "German", "code": "DE"},
+        {"number": "70163", "accessible": true, "title": "Italian", "code": "IT"},
+        {"number": "70164", "accessible": true, "title": "Polish", "code": "PL"},
+        {"number": "70165", "accessible": true, "title": "Spanish", "code": "ES"}
+      ],
+      "lounge": "80017"
+    },
+    "EURESA15102020": {
+      "conferences": [
+        {"number": "70166", "accessible": true, "title": "English", "code": "EN"},
+        {"number": "70167", "accessible": true, "title": "French", "code": "FR"}
+      ],
+      "lounge": "80018"
+    },
+    "Apt145": {
+      "conferences": [
+        {"number": "70168", "accessible": true, "title": "Czech", "code": "CS"},
+        {"number": "70169", "accessible": true, "title": "English", "code": "EN"},
+        {"number": "70170", "accessible": true, "title": "French", "code": "FR"},
+        {"number": "70171", "accessible": true, "title": "German", "code": "DE"},
+        {"number": "70172", "accessible": true, "title": "Italian", "code": "IT"},
+        {"number": "70173", "accessible": true, "title": "Spanish", "code": "ES"}
+      ],
+      "lounge": "80019"
+    },
+    "Gte145": {
+      "conferences": [
+        {"number": "70174", "accessible": true, "title": "Dutch", "code": "NL"},
+        {"number": "70175", "accessible": true, "title": "English", "code": "EN"},
+        {"number": "70176", "accessible": true, "title": "French", "code": "FR"},
+        {"number": "70177", "accessible": true, "title": "German", "code": "DE"},
+        {"number": "70178", "accessible": true, "title": "Italian", "code": "IT"},
+        {"number": "70179", "accessible": true, "title": "Romanian", "code": "RO"}
+      ],
+      "lounge": "80020"
+    },
+    "Nex150": {
+      "conferences": [
+        {"number": "70180", "accessible": true, "title": "Czech", "code": "CS"},
+        {"number": "70181", "accessible": true, "title": "English", "code": "EN"},
+        {"number": "70182", "accessible": true, "title": "French", "code": "FR"},
+        {"number": "70183", "accessible": true, "title": "German", "code": "DE"},
+        {"number": "70184", "accessible": true, "title": "Greek", "code": "EL"},
+        {"number": "70185", "accessible": true, "title": "Italian", "code": "IT"},
+        {"number": "70186", "accessible": true, "title": "Romanian", "code": "RO"},
+        {"number": "70180", "accessible": true, "title": "Slovak", "code": "SK"},
+        {"number": "70188", "accessible": true, "title": "Swedish", "code": "SV"}
+      ],
+      "lounge": "80021"
+    },
+    "Pax510": {
+      "conferences": [
+        {"number": "70189", "accessible": true, "title": "English", "code": "EN"},
+        {"number": "70190", "accessible": true, "title": "French", "code": "FR"}
+      ],
+      "lounge": "80022"
+    },
+    "Ker202": {
+      "conferences": [
+        {"number": "70192", "accessible": true, "title": "French", "code": "FR"},
+        {"number": "70193", "accessible": true, "title": "Italian", "code": "IT"}
+      ],
+      "lounge": "80023"
+    }
+  }
+}

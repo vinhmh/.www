@@ -1,0 +1,42 @@
+extends ../../layout/app
+
+block content
+  .page-content
+    .webphone-holder
+      form.webphone-form#coordinator-user-form(autocomplete="off")
+        h1 Welcome
+        if coordinator
+          .field-group.text-input
+            input#coordinator(type="hidden" name="coordinator" value=coordinator)
+        else
+          .field-group.text-input
+            input#coordinator(type="hidden" name="coordinator" value='true')
+        if name
+          .field-group.text-input
+            input#username(type="hidden" name="username" value=name)
+        else
+          .field-group.text-input
+            input#username(type="text" name="username" placeholder="Username")
+        if meetingID
+          .field-group.text-input
+            input#meetingID(type="hidden" name="meetingID" value=meetingID)
+        else
+          .field-group.text-input
+            input#meetingID(type="text" name="meetingID" placeholder="ID Meeting")
+          //select#meetingID(name="meetingID")
+            each meeting in meetings
+              option(data-modPw=meeting.moderatorPW)= meeting.meetingID
+        if language1
+          input#cf1(type="hidden" name="cf1" value=language1)
+        else
+          .field-group
+            .select-box
+              span
+              select(name='cf1' data-default='Choose your language')#cf1
+                option(value="") Choose your language
+        label.label Need to check your compatibility ?
+        button.check-btn(type=button) TEST YOUR BROWSER
+        br
+        label.label By clicking CONNECT, you agree to our 
+          a(href="#" target="_blank")#linkCoordinator Terms and conditions 
+        button.submit-btn(type="submit" disabled) CONNECT

@@ -1,0 +1,13 @@
+.toasts-wrapper {
+    display: flex;
+    flex-direction: column; 
+    max-width: 100vh; 
+    overflow: inherit; 
+    position: absolute; 
+    right: 0; 
+    z-index: 3;
+}
+
+.toast-body {
+    background-color: #e0e1e2 !important;
+}

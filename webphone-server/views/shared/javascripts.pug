@@ -1,0 +1,2 @@
+each asset in assets.filter(path => path.endsWith('.js'))
+  script(src=`${config.publicPath}${asset}`)

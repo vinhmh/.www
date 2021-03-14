@@ -1,0 +1,6 @@
+@import "~perfect-scrollbar/css/perfect-scrollbar.css";
+
+body {display: flex; flex-direction: column; min-width: 100px;}
+.root-wrapper {display: flex; flex: 1; flex-direction: column; height: 100%; }
+//scrollbarperfect
+.ui.selection.dropdown { min-width: 0;}

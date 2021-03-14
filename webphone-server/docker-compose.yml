@@ -1,0 +1,20 @@
+version: "3.8"
+services:
+  webphone_server:
+    container_name: "webphone_server"
+    build: .
+    ports:
+      - "3001:3001"
+    # Map files which could change during development for hot reload support
+    env_file:
+      - "./.env"
+    volumes:
+      - ./src:/app/src
+      - ./helpers:/app/helpers
+      - ./routes:/app/routes
+      - ./services:/app/services
+      - ./shared:/app/shared
+      - ./views:/app/views
+      - webphone_server_node_modules:/app/node_modules
+volumes:
+  webphone_server_node_modules:

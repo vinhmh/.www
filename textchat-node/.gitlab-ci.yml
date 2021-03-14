@@ -1,0 +1,74 @@
+stages:
+  - deploy
+
+variables:
+    SSH_HOST: 192.168.1.134
+    PROJECT_PATH: /home/app/apps/textchat-node
+    CI_DEBUG_TRACE: "true"
+
+default:
+  image: docker:stable
+  before_script:
+    - apk add openssh-client
+    - eval $(ssh-agent -s)
+    - mkdir -p ~/.ssh
+    - echo "$DEPLOYMENT_PRIVATE_KEY" > ~/.ssh/id_rsa
+    - chmod 400 ~/.ssh/id_rsa
+    - ssh-add ~/.ssh/id_rsa
+    - echo -e "Host *\n\tStrictHostKeyChecking no\n\n" > ~/.ssh/config
+
+deploy_feature:
+  stage: deploy
+  when: manual
+  except:
+    - staging
+    - master
+  environment:
+    name: staging
+  variables:
+    PF: staging
+  script:
+    - ssh -A $USER@$SSH_HOST -C " cd $PROJECT_PATH && git fetch && git checkout --force $CI_COMMIT_REF_NAME && git reset --hard origin/$CI_COMMIT_REF_NAME"
+    - ssh -A $USER@$SSH_HOST -C " $PROJECT_PATH/update.sh $PF"
+    - ssh -A $USER@$SSH_HOST -C " sudo systemctl restart textchat-node.service"
+    - sleep 10
+    - ssh -A $USER@$SSH_HOST -C " sudo chown www-data:www-data $PROJECT_PATH/dist/tmp/textchat.sock"
+  tags:
+    - staging
+
+deploy_staging:
+  stage: deploy
+  when: manual
+  only:
+    - staging
+  environment:
+    name: staging
+  variables:
+    PF: staging
+  script:
+    - ssh -A $USER@$SSH_HOST -C " cd $PROJECT_PATH && git fetch && git checkout --force $CI_COMMIT_REF_NAME && git reset --hard origin/$CI_COMMIT_REF_NAME"
+    - ssh -A $USER@$SSH_HOST -C " $PROJECT_PATH/update.sh $PF"
+    - ssh -A $USER@$SSH_HOST -C " sudo systemctl restart textchat-node.service"
+    - sleep 10
+    - ssh -A $USER@$SSH_HOST -C " sudo chown www-data:www-data $PROJECT_PATH/dist/tmp/textchat.sock"
+  tags:
+    - staging
+
+deploy_prod:
+  stage: deploy
+  when: manual
+  only:
+    - master
+  environment:
+    name: prod
+  variables:
+    PF: production
+  script:
+    - ssh -A $USER@$SSH_HOST -C " cd $PROJECT_PATH && git fetch && git checkout --force $CI_COMMIT_REF_NAME && git reset --hard origin/$CI_COMMIT_REF_NAME"
+    - ssh -A $USER@$SSH_HOST -C " $PROJECT_PATH/update.sh $PF"
+    - ssh -A $USER@$SSH_HOST -C " sudo systemctl restart textchat-node.service"
+    - sleep 10
+    - ssh -A $USER@$SSH_HOST -C " sudo chown www-data:www-data $PROJECT_PATH/dist/tmp/textchat.sock"
+  tags:
+    - prod
+

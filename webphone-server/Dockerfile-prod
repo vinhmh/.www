@@ -1,0 +1,17 @@
+FROM node:14
+
+WORKDIR /app
+ADD bin /app/bin
+ADD config /app/config
+ADD public /app/public
+ADD src /app/src
+ADD helpers /app/helpers
+ADD routes /app/routes
+ADD services /app/services
+ADD shared /app/shared
+ADD views /app/views
+ADD .babelrc .eslintrc .nvmrc package.json webpack.config.js yarn.lock /app/
+
+RUN yarn install
+
+ENTRYPOINT ["yarn", "start"]

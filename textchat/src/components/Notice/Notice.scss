@@ -1,0 +1,4 @@
+.noticeHolder { position: absolute; top: 0; left: 0; right: 0; z-index: 100; }
+.noticeOver { display: none; cursor: pointer; background: rgba(0, 0, 0, 0.4); position: absolute; top: 0; left: 0; right: 0; bottom: 0; }
+.messageBox { padding: 10px 14px 9px 8px; margin: 54px 4px 0; border: 1px solid #333; font-size: 16px; box-shadow: 0 1px 10px rgba(0, 0, 0, 0.7); z-index: 101; cursor: default;  background: #fff; position: relative; }
+.closeBtn { cursor: pointer; position: absolute; top: 3px; right: 4px; font-size: 18px; }

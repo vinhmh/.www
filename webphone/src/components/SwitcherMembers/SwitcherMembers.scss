@@ -1,0 +1,7 @@
+.switcher {margin: 0 10px 10px;}
+.floorItem {border-bottom: 1px solid #000; padding: 0 0 5px; margin: 0 0 5px;}
+.item {margin: 0 0 5px; display: flex; width: 100%; justify-content: space-between;}
+.item p {line-height: 20px;}
+.item span {border-radius: 20px; background: #ddd; width: 20px; height: 20px; display: block; }
+.item span.indicatorActive {background: red; }
+.item span.indicatorTalking { box-shadow: 0 0 5px 1px #ff6a00;}

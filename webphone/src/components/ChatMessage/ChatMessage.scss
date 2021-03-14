@@ -1,0 +1,29 @@
+.chatMessageContainer {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.chatMessageName {
+  color: #a8a8a8;
+  font-weight: bold;
+  margin-bottom: 3px;
+}
+
+.chatMessage {
+  color: #a8a8a8;
+  margin-bottom: 0;
+}
+
+.messageContainer {
+  padding: 5px 10px 5px 10px;
+  border-radius: 10px;
+  background-color: rgb(247, 247, 247);
+  display: flex;
+  width: 229px;
+  flex-direction: column;
+}
+
+.userMessage {
+  align-items: flex-end;
+}

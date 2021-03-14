@@ -1,0 +1,30 @@
+{
+  "meetings": {
+    "Demo": {
+      "conferences": [
+        {
+          "number": 70001,
+          "code": "FR",
+          "title": "French",
+          "accessible": true
+        },
+        {
+          "number": 70002,
+          "code": "EN",
+          "title": "English",
+          "accessible": true
+        },
+        {
+          "number": 70003,
+          "code": "ES",
+          "title": "Spanish",
+          "accessible": true
+        }
+      ],
+      "useFloor": false,
+      "useSwitcher": false,
+      "lounge": 80000,
+      "floor": 50000
+    }
+  }
+}

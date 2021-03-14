@@ -1,0 +1,56 @@
+extends ../../layout/app
+
+block content
+  .page-content
+    .webphone-holder
+      form.webphone-form#showcase-user-form(autocomplete="off")
+        h1 Welcome
+        .field-group.text-input
+          input#username(type="text" name="username" placeholder="Fill your name" value=username)
+        .field-group.text-input
+          input#meetingID(type="text" name="meetingID" placeholder="ID Meeting")
+          //input(type="hidden" name="meetingID" value="Demo")
+        .field-group
+          .select-box
+            span
+            select(name='cf1' data-default='Choose your language')#cf1
+              option(value="") Choose your language
+        button.submit-btn(type="submit" disabled) CONNECT
+    .help-information
+      .item
+        span A
+        p.headline
+          | 100% web
+          img.spaced(src="/images/chrome.svg")
+          img(src="/images/firefox.svg")
+          img(src="/images/safari.svg")
+          img(src="/images/edge.svg")
+      .item
+        span B
+        p.headline Internet
+        p
+          span.tab Test connection
+          a(href="http://ovh.net") http://ovh.net
+        p
+          span.tab audio
+          | 256 Ko/sec = 2048 Kbps (2Mo)
+        p
+          span.tab audio + video
+          | 640 Ko/sec = 5120 Kbps (5Mo)
+      .item
+        span C
+        p.headline Device
+        p PC - Mac - Linux
+        p iPhone +6 IOS +11 - Android +Webrtc
+      .item
+        span D
+        p.headline
+          | Tip: user headset
+          img.spaced(src="/images/icons8-headset-52.png")
+      .item.dialog
+        span E
+        p
+          img(src="/images/request-permission.png")
+          span
+            i &#8592;
+            |  Yes

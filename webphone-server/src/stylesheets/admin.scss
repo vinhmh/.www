@@ -1,0 +1,93 @@
+@import "../stylesheets/common";
+
+* { padding: 0; margin: 0; }
+html { height: 100%; }
+body { font: 14px 'Poppins', Arial, sans-serif; height: 100%; background: $white; }
+a { color: $purple; }
+.c-pointer { cursor: pointer; }
+input:focus,
+select:focus,
+textarea:focus,
+button:focus { outline: none; }
+/**/
+.page-holder { height: 100%; background-color: #f4f5f6;}
+.page-content { height: 100%; margin: 0 16px; }
+.page-monitor { height: 100%; }
+/**/
+.bbb-meetings-holder { padding: 40px 0 0 0; width: 300px; margin: 0 auto; }
+/**/
+.admin-menu { padding: 15px 0; border-bottom: 1px solid $gold_grey; display: fixed;}
+.admin-menu a { margin: 0 6px; display: inline-block; font-size: 16px; text-decoration: none; }
+/**/
+form { margin: 0 0 30px; }
+form .field { margin: 0 0 15px; }
+form .field input[type="text"] { width: 100%; }
+/**/
+.meetings_list { }
+.meetings_list .meeting td { padding: 5px 3px; }
+.meetings_list .title { width: 100%; }
+.meetings_list .delete { color: $brown; float: right; cursor: pointer; text-decoration: none; }
+/**/
+.webphone-holder { padding: 60px 0 20px; }
+.webphone-holder h1 { color: $warning_dark; text-align: center; margin: 0 0 20px; }
+.webphone-form { padding: 40px 20px 30px; width: 300px; margin: 0 auto; background: $white; position: relative; }
+.webphone-form.large-form { width: 600px; }
+.webphone-form input[type="text"],
+.webphone-form input[type="password"]{ height: 30px; font-size: 15px; padding: 0 6px; border: none; border-bottom: 2px solid $black; width: 100%; background-image: none; background-color: transparent; -webkit-box-shadow: none; -moz-box-shadow: none; box-shadow: none; box-sizing: border-box; }
+.webphone-form .field-group { margin: 0 0 30px; }
+.webphone-form .field-group.text-input { margin-top: -10px; }
+.webphone-form .field-group label { display: inline-block; }
+.webphone-form .note { color: #555; font-size: 12px; font-style: italic; }
+.webphone-form .submit-btn { margin: 0 auto; max-width: 300px; border: none; background: $black; display: block; width: 100%; color: $white; height: 40px; font-size: 16px; border-radius: 6px; cursor: pointer; }
+.webphone-form .submit-btn:disabled { opacity: 0.6; cursor: default; }
+.webphone-form .submit-btn:active { color: $warning_dark }
+.webphone-form .cols:after {clear: both; content: ''; display: table; }
+.webphone-form .cols {width: 100%; float: left;}
+.webphone-form .cols .col { width: 50%; box-sizing: border-box; padding: 0 10px; float: left;}
+/**/
+.select-box {  height: 32px; padding: 0 24px 0 8px; position: relative; box-sizing: border-box; }
+.select-box::before { border: 2px solid $black; position: absolute; left: 0; right: 0; bottom: 0; top: 0; content: ''; display: block; }
+.select-box::after { content: ''; display: block; border-width: 10px 6px 0 6px; border-style: solid; border-color: $black transparent transparent transparent; width: 0; position: absolute; right: 8px; top: 50%; margin: -5px 0 0 0; }
+.select-box span { white-space: nowrap; text-overflow: ellipsis; line-height: 32px; display: block; }
+.select-box select { position: absolute; cursor: pointer; z-index: 1; width: 100%; top: 0; left: 0; right: 0; bottom: 0; opacity: 0; margin: 0; }
+/**/
+.bbb-holder { height: 100%; position: relative; }
+.bbb-holder iframe { height: 100%; width: 100%; position: absolute; border: none; top: 0; bottom: 0; left: 0; right: 0; }
+.bbb-holder .webphone-iframe-holder { position: absolute; left: 0; top: 0; bottom: 0; width: 230px; }
+.bbb-holder .bbb-iframe-holder { position: absolute; left: 230px; top: 0; bottom: 0; right: 0; }
+.bbb-holder .webphone-iframe { }
+.bbb-holder .bbb-iframe { }
+
+/* seems not to be used ?*/
+.text-red {color: #B03060;}
+.text-orange {color: #FE9A76;}
+.text-yellow {color: #FFD700;}
+.text-olive {color: #32CD32;}
+.text-green {color: #016936;}
+.text-teal {color: #008080;}
+.text-blue {color: #0E6EB8;}
+.text-violet {color: #EE82EE;}
+.text-purple {color: #B413EC;}
+.text-pink {color: #FF1493;}
+.text-brown {color: #A52A2A;}
+.text-grey {color: #A0A0A0;}
+.text-black {color: #000000;}
+
+body ::-webkit-scrollbar {
+  width:6px !important;
+}
+
+body ::-webkit-scrollbar-thumb {
+  background: #97a0af !important;
+  border-radius: 0 !important;
+}
+
+
+.ui.table td.active, .ui.table tr.active, .ui.table.tr:active, .ui.table.td:active {
+  background-color: #deebff !important;
+}
+
+.ui.table tbody tr:hover {
+  background-color: #f1f1f1 !important;
+  cursor:pointer !important;
+}

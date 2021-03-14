@@ -1,0 +1,23 @@
+{
+  "chat_general": "Chat generale",
+  "chat_technical": "Chat tecnica",
+  "technical_username": "Assistente tecnico",
+  "auto_technical": "Team di supporto",
+  "technical_auto_reply": "Abbiamo ricevuto la tua richiesta di assistenza. Elaboriamo la tua richiesta e ti daremo una risposta molto rapidamente",
+  "chat_general_technical": "Locale tecnico",
+  "support_title": "Clicca qui se hai bisogno di aiuto",
+  "chat_init": "Iniziamo la conversazione ...",
+  "orator_no_speaking": "Nessuno parla",
+  "orator_stage_speaking": "Il palco sta parlando",
+  "intepreter_pending": "Nessuna interpretazione",
+  "interpreter_audiodesk":"Audiodesk interprete",
+  "parcitipant_audiodesk":"Audiodesk partecipante",
+  "tech_assits_audiodesk":"ASSISTENZA TECNICA AUDIODESK",
+  "save_chat": "Salva chat",
+  "delete_chat": "Elimina chat",
+  "chat_general_moderator": "Cat. Degli interpreti",
+  "confirm_delete_conversation": "Ciò eliminerà definitivamente la cronologia delle conversazioni",
+  "add_user": "Participants",
+  "chat_cabin_moderator": "La mia cabina",
+  "confirm_remove_remove_user": "This will remove user from this conversation"
+}

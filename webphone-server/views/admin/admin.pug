@@ -1,0 +1,16 @@
+extends ../layout/admin
+
+block content
+  .page-content
+    include shared/menu
+    .webphone-holder
+      form.webphone-form#new_meeting_form
+        .field-group
+          input#meeting-id(type='text' name='meetingID' placeholder="ID Meeting" )
+        .field-group
+          input#attendee-pw(type='text' name='attendeePW' placeholder="attendeePW" )
+        .field-group
+          input#moderator-pw(type='text' name='moderatorPW' placeholder="moderatorPW" )
+        button(type='submit') Create
+    .bbb-meetings-holder
+      table#meetings_list.meetings_list

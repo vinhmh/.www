@@ -1,0 +1,14 @@
+.btnGroup {
+    display: flex;
+    padding-top: -4px;
+  
+    button {
+        border: none;
+        outline: none;
+        padding-right: 4px;
+        padding-left: 2px;
+        font-size: 14px;
+        color: #a8a8a8;
+        background: linear-gradient(to bottom, #ffffff 0% ,#dddcdc 50% , #cfcfcf 100%);
+    }
+  }

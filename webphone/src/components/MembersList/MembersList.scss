@@ -1,0 +1,36 @@
+/**/
+.sectionsHolder { color: #000; margin: 0 5px; padding: 15px 0 0 0; border-top: 1px solid #cfcfcf; }
+.sectionBox { }
+.sectionTitle { position: relative; text-align: center; margin: 0 0 2px; font-size: 13px; }
+.sectionTitle:after { position: absolute; height: 1px; background: #000; top: 50%; content: ''; left: 0; right: 0; }
+.sectionTitle span { display: inline-block; background: #fff; font-weight: bold; position: relative; z-index: 2; padding: 0 6px; }
+/**/
+.roomHolder { margin: 0 0 10px; font-size: 13px; }
+.roomTitle { background: #ffc000; padding: 4px 6px; margin: 0 0 4px; }
+.roomSlideArrow { float: right; cursor: pointer; }
+.list { list-style: none; margin: 0 0 0 6px; padding: 0; }
+.list .itemHolder { overflow: hidden; }
+.list .item { position: relative; padding: 0; display: flex; flex-wrap: nowrap; justify-content: space-between; }
+.list .memberName { overflow: hidden; white-space: nowrap; text-overflow: ellipsis; flex-grow: 1; }
+.list .memberNameFull { overflow: hidden; visibility: hidden; height: 0; display: block; }
+.list .memberNameFull span{ overflow: hidden; white-space: nowrap; visibility: hidden; height: 0; display: inline-block; }
+.userIcons { position: relative; padding: 0 28px 0 0; }
+.userIcons span,
+.userIcons i { display: inline-block; vertical-align: middle; margin: 0 2px; }
+.userIcons .roomLabel{display: none;}
+.userIcons .roomLabel { font-size: 11px; margin: 0 4px 0 0; font-weight: bold; }
+.userIcons .micIcons { width: 24px; position: absolute; right: 0; top: 0; white-space: nowrap;}
+.userIcons .micIcons i { cursor: pointer;}
+.userIcons .statusIcon { color: #00be00; position: absolute; left: 0; top: 5px; font-size: 9px; }
+.userIcons i.talkingIcon { cursor: default; position: relative;  background: red; border-radius: 20px; height: 8px; width: 8px;  }
+.clickable { cursor: pointer; }
+.grayedIcon { color: #999; cursor: default !important; }
+/* moderator content */
+.moderatorContent { margin: 0; }
+.modBox { position: relative; margin: 0 0 5px; padding: 0 0 5px; }
+.modBox .roomLabel,
+.oratorsList .roomLabel { display: inline-block; }
+.oratorsList { @extend .modBox; border-bottom: none; height: 58px; overflow-y: auto; }
+.interpretersList { @extend .modBox; min-height: 14px; }
+/**/
+.moderatorUser .interpretersList { min-height: 0; }

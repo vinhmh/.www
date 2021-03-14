@@ -1,0 +1,10 @@
+extends ../layout/admin
+
+block content
+  .bbb-holder
+    if webphoneUrl
+      .webphone-iframe-holder
+        iframe.webphone-iframe(src=webphoneUrl allow="microphone; camera")
+    if joinUrl
+      .bbb-iframe-holder
+        iframe.bbb-iframe(src=joinUrl allow="microphone; camera")

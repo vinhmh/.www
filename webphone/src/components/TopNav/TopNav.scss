@@ -1,0 +1,47 @@
+.topNavHolder { margin: 5px 0 0 0; }
+.topNavHolder::after { display: table; clear: both; width: 100%; content: ''; }
+.bar {min-height: 25px;}
+.bar::after { display: table; clear: both; width: 100%; content: ''; }
+.joinBtn { margin: 0 2px 0 5px; height: 22px; outline: none; font-size: 15px; font-weight: bold; vertical-align: top; background: #4f81bd; color: #fff; cursor: pointer; display: inline-block; border: 2px solid #3a5f8b; border-radius: 4px; padding: 0 4px; }
+.joinBtn.active { background: #4fbd82; border-color: #3a8b5f;}
+.disconnectBtn { float: right; cursor: pointer; font-size: 18px; padding: 2px; margin: 0 4px 0 0;}
+i.mediaSettings { position: absolute; left: 11px; top: 22px; color: #444; z-index: 2; font-size: 18px; cursor: pointer; }
+i.mediaSettings:hover { color: #000; }
+.pic { height: 60px; text-align: center; position: relative; box-sizing: border-box; padding: 0 10px; }
+.pic .textChat {position: absolute; right: 11px; top: 20px; color: #444; z-index: 2; font-size: 18px; cursor: pointer;}
+.pic .textChat.unread::before {position: absolute; top: 0; right: 0; width: 8px; height: 8px; border-radius: 10px; background: red; content: '';
+  -webkit-animation: pulsate 1s infinite;
+  -moz-animation: pulsate 1s infinite;
+  -o-animation: pulsate 1s infinite;
+  animation: pulsate 1s infinite;
+}
+.pic .textChat:hover { color: #000; }
+.pic:before { width: 50px; height: 50px; margin: -25px 0 0 -25px; left: 50%; top: 50%; z-index: 1; background: url("assets/images/logo.png") 0 0 no-repeat; display: block; content: ''; background-size: contain; position: absolute; }
+.pic::after { height: 30px; margin: -15px 0 0 0; background: #ffc000; display: block; content: ''; position: absolute; left: 0; right: 0; top: 50%; }
+.switcherHolder {background: #ffc000; position: relative; text-align: center; padding: 7px 0; margin: 0 0 10px;}
+.switcherHolder .mediaSettings { top: 50%; margin: -10px 0 0 0; }
+.switcherHolder .userBox { display: inline-block;}
+.switcherHolder .userName { border-bottom: 1px solid #000; padding: 0 4px 2px;}
+.switcherHolder .userMeetingID {padding: 2px 0 0;}
+
+
+@-webkit-keyframes pulsate {
+  0% { opacity: 0; }
+  50% { opacity: 1; }
+  100% { opacity: 0; }
+}
+@-moz-keyframes pulsate {
+  0% { opacity: 0; }
+  50% { opacity: 1; }
+  100% { opacity: 0; }
+}
+@-o-keyframes pulsate {
+  0% { opacity: 0; }
+  50% { opacity: 1; }
+  100% { opacity: 0; }
+}
+@keyframes pulsate {
+  0% { opacity: 0; }
+  50% { opacity: 1; }
+  100% { opacity: 0; }
+}

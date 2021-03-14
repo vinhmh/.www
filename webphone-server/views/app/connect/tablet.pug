@@ -1,0 +1,20 @@
+extends ../../layout/app
+
+block content
+  .page-content
+    .webphone-holder
+      form.webphone-form.bbb-form#regular-user-form(autocomplete="off")
+        h1 Welcome
+        if name
+          .field-group.text-input
+            input#username(type="hidden" name="username" placeholder="Username" value=name)
+        else
+          .field-group.text-input
+            input#username(type="text" name="username" placeholder="Username" value=name)
+        if meetingID
+          .field-group.text-input
+            input#meetingID(type='hidden' name='meetingID' value=meetingID)
+        else
+          .field-group.text-input
+            input#meetingID(type='text' name='meetingID' placeholder='ID Meeting' tabindex="3")
+        button.bbb-btn.submit-btn(type='submit' disabled) CONNECT

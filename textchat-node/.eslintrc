@@ -1,0 +1,61 @@
+##
+# If you need to add/change/remove rules, bring it up for open discussion before merging
+##
+root: true
+parser: babel-eslint
+extends: airbnb-base
+
+rules:
+    camelcase: 1
+    func-names: 0
+    max-len: [2, 140, 2, { ignoreUrls: true, ignoreComments: false, ignorePattern: "^(import|\\s+\\w+?: |\\s+\\w+? \\w+? = )" }]
+    no-shadow: 1
+    no-unexpected-multiline: 2
+    semi: [2, never]
+    sort-vars: 1
+    sort-keys: 0
+    no-plusplus: 0
+    no-mixed-operators:
+     - 'warn'
+    no-console: 0
+    no-param-reassign: 0
+    no-return-assign: 0
+    no-unused-expressions:
+      - 2
+      - allowShortCircuit: true
+    no-undef: 0
+    comma-dangle: ["error", "only-multiline"]
+    consistent-return: 0
+
+    import/extensions: 0
+    import/imports-first: 2
+    import/named: 2
+    import/no-commonjs: 2
+    import/no-duplicates: 2
+    import/no-named-as-default: 1
+    import/no-unresolved: 2
+    import/prefer-default-export: 1
+    import/no-extraneous-dependencies:
+      - 'error'
+      - devDependencies: true
+    object-curly-newline: 0
+
+env:
+    browser: true
+    jasmine: true
+
+plugins:
+    - import
+
+settings:
+    import/ignore:
+      - node_modules
+      - \.css$
+    import/resolver:
+      node:
+        extensions:
+          - .js
+
+globals:
+  window: true
+  jest: true

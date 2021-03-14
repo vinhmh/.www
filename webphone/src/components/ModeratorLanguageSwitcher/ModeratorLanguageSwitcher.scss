@@ -1,0 +1,73 @@
+.switchContainer {
+  display: flex;
+  justify-content: space-around;
+  // align-items: center;
+  margin-top: 10px;
+  margin-bottom: 25px;
+}
+
+.switcherBtn {
+  border: 2px solid #cccccc;
+  border-radius: 100px;
+  height: 100px;
+  width: 100px;
+  background-color: transparent;
+  outline: none !important;
+}
+.microActivated {
+  background-color: rgba(17, 0, 245, 1);
+  border-width: 0px;
+}
+
+.microNotAllowed {
+  cursor: not-allowed;
+}
+
+.switcherBtn:disabled {
+  cursor: not-allowed;
+  opacity: 0.3;
+}
+
+.langCode {
+  display: block;
+  text-align: center;
+  font-size: 15px;
+  color: #cfcfcf;
+  margin-top: 5px;
+}
+.sliderTrack {
+  opacity: 0.4;
+}
+
+.volumeContainer {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  position: relative;
+}
+.volumeIcon {
+  position: absolute;
+  left: -10px;
+  top: -9px;
+  color: rgba(17, 0, 245, 1);
+  cursor: pointer;
+}
+.volumeBar {
+  margin-top: 0px;
+  width: 75%;
+}
+
+// @media screen and (max-width: 800px) {
+//   .switcherBtn {
+//     width: 120px !important;
+//     height: 120px !important;
+//   }
+// }
+
+@media screen and (max-width: 600px){
+ .switchContainer{
+  justify-content: space-evenly;
+}
+}

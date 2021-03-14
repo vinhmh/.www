@@ -1,0 +1,38 @@
+import React, { Component } from 'react'
+import classnames from 'classnames'
+import css from '../ListenLines/ListenLines.scss'
+
+export default class LoungeIcon extends Component {
+  render() {
+    const { inLoungeRoom } = this.props
+
+    const props = {
+      className: classnames(css.loungeIcon, {
+        [css.loungeIconActive]: inLoungeRoom,
+      }),
+    }
+    
+    return (
+      <svg
+        {...props}
+        version="1.1"
+        xmlns="http://www.w3.org/2000/svg"
+        x="0px"
+        y="0px"
+        width="23"
+        height="23"
+        viewBox="0 0 100 62.1"
+      >
+        <g>
+          <path
+            d="M87.2,17v-3.2C87.2,7.3,81.9,2,75.4,2H24.6c-6.5,0-11.8,5.3-11.8,11.8V17C8.5,17.1,5,20.6,5,25v18.4c0,5.1,4.2,9.3,9.3,9.3
+		h1.4v6.8h3v-6.7h3.4h55.7h3.4v6.8h3v-6.8h1.4c5.1,0,9.3-4.2,9.3-9.3V25C95,20.6,91.5,17.1,87.2,17z M20.7,49.8h-6.3
+		c-3.6,0-6.4-2.9-6.4-6.4V25c0-2.8,2.2-5,5-5h2.7c2.8,0,5,2.2,5,5V49.8z M23.7,38.4h52.7v11.4H23.7V38.4z M76.3,25v10.5H23.7V25
+		c0-4.4-3.5-7.9-7.8-8v-3.2C15.9,9,19.8,5,24.7,5h50.8c4.8,0,8.8,3.9,8.8,8.8V17C79.8,17.1,76.3,20.6,76.3,25z M92,43.4
+		c0,3.5-2.8,6.3-6.3,6.3h-6.3V25c0-2.8,2.2-5,5-5H87c2.8,0,5,2.2,5,5V43.4L92,43.4z"
+          />
+        </g>
+      </svg>
+    )
+  }
+}

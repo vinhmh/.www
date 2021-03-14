@@ -1,0 +1,117 @@
+.filteredConferenceContainer {
+  margin-top: 5px;
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+  height: auto;
+}
+
+.filterHeaderContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.filterHeader {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  max-width: 65%;
+
+  .angleIcon {
+    cursor: pointer;
+    color: #a8a8a8;
+    display: flex;
+    align-items: center;
+  }
+  .angleIcon:active {
+    opacity: 0.7;
+  }
+  .left {
+    padding-right: 5px;
+  }
+  .right {
+    padding-left: 5px;
+  }
+  .threeDots {
+    margin: 0;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+
+}
+
+.filterLanguageBar {
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  overflow-y: hidden;
+  overflow-x: scroll;
+  white-space: nowrap;
+  padding: 0;
+  margin-bottom: 0;
+  height: 30px;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  // max-width: 250px;
+  display: flex;
+  align-items: center;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  li:not(:first-child) {
+    margin-left: 20px;
+  }
+  li {
+    padding: 2px;
+    cursor: pointer;
+    color: #a8a8a8;
+    font-size: 14px;
+    display: inline-block;
+    list-style-type: none;
+    scroll-snap-align: start;
+    caret-color: transparent;
+  }
+  li:active {
+    opacity: 0.7;
+  }
+
+  .activeLanguage {
+    color: #fe1b55;
+    border-bottom: 2px solid #fe1b55;
+    margin-bottom: -1px;
+  }
+
+  .globalIconActive {
+    filter: invert(37%) sepia(67%) saturate(7458%) hue-rotate(332deg) brightness(101%) contrast(108%);
+  }
+}
+
+.filterConferenceUsersContainer {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 22vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+@media screen and (max-width: 600px) {
+  .filterLanguageBar {
+    max-width: 600px;
+  }
+}
+
+
+.scrollContainer {
+  // padding-left: 10px;
+  padding-right: 10px;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin-top: -5px;
+}

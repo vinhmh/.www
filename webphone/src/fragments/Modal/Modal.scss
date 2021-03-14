@@ -1,0 +1,18 @@
+.isOpen {
+    display: block;
+    padding-right: 15px;
+}
+.container {
+    position: relative;
+    z-index: 10000000000000000000000000000;
+}
+.spinner {
+    position: absolute;
+    display: flex;
+    align-items: flex-start;
+    top: 50%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1000000000000000000000000000000;
+}

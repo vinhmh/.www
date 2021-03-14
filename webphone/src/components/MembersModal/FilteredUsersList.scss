@@ -1,0 +1,51 @@
+.filteredConferenceContainer {
+  margin-top: 30px;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  height: auto;
+}
+
+.filterLanguageBar {
+  overflow-y: hidden;
+  overflow-x: auto;
+  white-space: nowrap;
+  padding: 0;
+  margin-bottom: 0;
+  height: 30px;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  li:not(:first-child) {
+    margin-left: 20px;
+  }
+  li {
+    padding: 2px;
+    cursor: pointer;
+    color: #a8a8a8;
+    font-size: 14px;
+    display: inline-block;
+    list-style-type: none;
+  }
+
+  .activeLanguage {
+    color: #fe1b55;
+    font-weight: bold;
+    border-bottom: 2px solid #fe1b55;
+  }
+}
+
+.filterConferenceUsersContainer {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  height: 200px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}

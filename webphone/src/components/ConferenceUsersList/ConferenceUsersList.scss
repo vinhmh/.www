@@ -1,0 +1,14 @@
+.conferenceContainer {
+    margin-top: 1vh;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 25vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+@media screen and (max-width:600){
+    .conferenceContainer{
+        margin-left: 18%;
+    }
+}

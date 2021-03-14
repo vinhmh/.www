@@ -1,0 +1,15 @@
+@import "../../../../../stylesheets/common";
+
+.note {
+  margin-top: 12px;
+  color: $gold_grey;
+}
+
+.label {
+  color: $grey;
+}
+
+.errorLabel {
+  color: $brown;
+  font-weight: 600;
+}

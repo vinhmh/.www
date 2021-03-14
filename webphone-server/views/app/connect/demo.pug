@@ -1,0 +1,19 @@
+extends ../../layout/app
+
+block content
+  .page-content
+    .webphone-holder
+      form.webphone-form#regular-user-form(autocomplete="off")
+        h1 Welcome
+        input#username(type="hidden" name="username" placeholder="Username" value="demo_user")
+        .field-group.text-input
+          input#meetingID(type="text" name="meetingID" placeholder="ID Meeting")
+          //select#meetingID(name="meetingID")
+            each meeting in meetings
+              option(data-modPw=meeting.moderatorPW)= meeting.meetingID
+        .field-group
+          .select-box
+            span
+            select(name='cf1' data-default='Choose your language')#cf1
+              option(value="") Choose your language
+        button.submit-btn(type="submit" disabled) CONNECT

@@ -1,0 +1,14 @@
+import * as React from 'react'
+
+function DowloadIcon(props) {
+  return (
+    <svg width="1em" height="1em" viewBox="0 0 32 32" {...props}>
+      <path
+        d="M16 25.05l-3.25-3.25-.75.75 4.5 4.5 4.5-4.5-.75-.75L17 25.05V14h-1v11.05zM19.5 3H9.003A2.005 2.005 0 007 5.007v22.986A2 2 0 008.997 30h15.006A1.999 1.999 0 0026 28.01V10l-6-7h-.5zM19 4H8.996C8.446 4 8 4.455 8 4.995v23.01c0 .55.455.995 1 .995h15c.552 0 1-.445 1-.993V11h-4.002A1.995 1.995 0 0119 8.994V4zm1 .5v4.491c0 .557.45 1.009.997 1.009H24.7L20 4.5z"
+        fill="#000"
+        fillRule="evenodd"
+      />
+    </svg>
+  )
+}
+export default DowloadIcon

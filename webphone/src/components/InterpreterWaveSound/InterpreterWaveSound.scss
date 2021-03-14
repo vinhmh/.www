@@ -1,0 +1,89 @@
+.interpreterWaveSoundContainer {
+  height: 10vh;
+  margin-top: 1vh;
+  margin-bottom: 1vh;
+  // text-align: center;
+}
+
+.interpretSinner {
+  width: 50px;
+  height: 40px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 10px;
+
+  *:not(:first-child) {
+    margin-left: 2px;
+  }
+}
+
+.waitInterpretContainer {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  height: 8vh;
+}
+
+.txtInterpret {
+  margin-top: 10px;
+  margin-bottom: 0;
+  font-size: 14px;
+  text-align: center;
+  color: #a8a8a8;
+}
+
+.interpretSinner > div {
+  background-color: #3af328;
+  height: 100%;
+  width: 6px;
+  display: inline-block;
+
+  -webkit-animation: sk-stretchdelay 1.2s infinite ease-in-out;
+  animation: sk-stretchdelay 1.2s infinite ease-in-out;
+}
+
+.interpretSinner .rect2 {
+  -webkit-animation-delay: -1.1s;
+  animation-delay: -1.1s;
+}
+
+.interpretSinner .rect3 {
+  -webkit-animation-delay: -1s;
+  animation-delay: -1s;
+}
+
+.interpretSinner .rect4 {
+  -webkit-animation-delay: -0.9s;
+  animation-delay: -0.9s;
+}
+
+.interpretSinner .rect5 {
+  -webkit-animation-delay: -0.8s;
+  animation-delay: -0.8s;
+}
+
+@-webkit-keyframes sk-stretchdelay {
+  0%,
+  40%,
+  100% {
+    -webkit-transform: scaleY(0.4);
+  }
+  20% {
+    -webkit-transform: scaleY(1);
+  }
+}
+
+@keyframes sk-stretchdelay {
+  0%,
+  40%,
+  100% {
+    transform: scaleY(0.4);
+    -webkit-transform: scaleY(0.4);
+  }
+  20% {
+    transform: scaleY(1);
+    -webkit-transform: scaleY(1);
+  }
+}
